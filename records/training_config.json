@@ -1,0 +1,119 @@
+{
+  "model": "E018_region",
+  "architecture": "frozen_dinov3_gated_subpixel_logits",
+  "variant": "dinov3_subpixel_e018",
+  "initialization": "frozen_dinov3_pretrained_other_parameters_random",
+  "pretrained_sha256": "08c60483bc63c04f533611e34bf70b120eedb7240f469bc16e9e20bf344b941d",
+  "initial_checkpoint": null,
+  "random_initialization_digests": {
+    "encoder": "16c637615a04bfcc7f674e20e69e98b927d76e884c2116b5e4c31355cf5bdc76",
+    "decoder": "0cc1f1b2bd1a93cc6bfb9e1d34822a40a0b4d73dbd4963829faf695426cd4894"
+  },
+  "patience": 0,
+  "early_stopping_enabled": false,
+  "parameters": 29154733,
+  "mode": "selection",
+  "epochs": 200,
+  "schedule_epochs": 200,
+  "global_batch": 32,
+  "local_batch": 4,
+  "world_size": 8,
+  "physical_devices": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "gradient_accumulation_steps": 2,
+  "forward_micro_batch": 2,
+  "resolution": 1024,
+  "encoder_lr": 0.0003,
+  "head_lr": 0.0006,
+  "weight_decay": 0.01,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "seed": 42,
+  "loss": "main_ce_dice_plus_architecture_auxiliary_supervision",
+  "scheduler": "linear_warmup_poly_0.9",
+  "warmup_steps": 603,
+  "amp": "bfloat16",
+  "attention": "torch_sdpa",
+  "normalization": "fixed_rgb_mean_std",
+  "normalization_mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "normalization_std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "validation_weights": "model",
+  "checkpoint_retention": "best_and_latest_only",
+  "augmentation": {
+    "resize_min": 512,
+    "resize_max_exclusive": 2049,
+    "crop_size": 1024,
+    "flip_probability": 0.5,
+    "brightness": [
+      0.875,
+      1.125
+    ],
+    "contrast": [
+      0.5,
+      1.5
+    ],
+    "saturation": [
+      0.5,
+      1.5
+    ],
+    "hue": [
+      -0.05,
+      0.05
+    ],
+    "photometric_probability": 0.5,
+    "image_padding": 0,
+    "mask_padding": 255
+  },
+  "decoder_channels": 192,
+  "decoder_normalization": "groupnorm",
+  "decoder_dropout": 0.0,
+  "encoder_drop_path_max": 0.1,
+  "ignore_index": 255,
+  "manifest_fingerprint": "3e783ab1d51518ae673a6b48dedf80d7e7ea82200836db71369ec1d8e58e843b",
+  "class_names": [
+    "regolith",
+    "rock",
+    "crater",
+    "mountain",
+    "sky"
+  ],
+  "training_samples": 6403,
+  "validation_samples": 1599,
+  "steps_per_epoch": 201,
+  "torch": "2.9.0+cpu",
+  "torch_npu": "2.9.0.post1+gitee7ba04",
+  "source_hashes": {
+    "data.py": "d2844b79168018a09ec515e75ea26d67b03c46e9462da95a7c69504ab2db6c57",
+    "e018_base.py": "3ffe38c5b969336124c400ca17c2b5b6c81f8e83944f452f033de6731713470d",
+    "context.py": "dd9892641711b6c9f9b882828e73d50cf4967902a1105c6eb940d9d3c82c53ab",
+    "encoder.py": "0af2d438ded71b88a853cb413038e78f049eba77c5cc0ec7d3482788cffbe455",
+    "train.py": "aacaaae31cbdae7b1e6fb12e2fa212413cbd9c648db7dc6e458b6bff5cbb687d",
+    "dinov3_model.py": "063eb33c56f9c78179e51fff4a1b6d54db16003dabc7cc2db6eac4d96d72e99b",
+    "predict.py": "967886b2fd50a01b8ee0f42bdddfa8a72ad1af16328a0086c018529e47d0ceca",
+    "run_npu.sh": "c60e7ea2d28b61dc665cc3bb527b15775c63cdc6ce30988143a50062f40e8764",
+    "common.py": "3567d5b06d4fa0b5bcc461a741bff99765fe13e45eac3bb99c23561ff0155059",
+    "epoch_policy.py": "d5800a85cdb1432348bd9f01336d0ed3260fa2e806e2e1a83838347905f85096",
+    "benchmark.py": "5dc622840aa282997fdcc8ea33a460640ec3158e67893bef8b89c57da1bde3b3",
+    "run.py": "4315bf66cde3e97f466469e7d4890663fe5bfc350c492ded8790875afd754ed4",
+    "dependencies.json": "078d958ef92dbad4e5bd58634084f62fb001c29ea14ce2af34e35a58cb4caa0b"
+  },
+  "official_manifest_sha256": "8ed8e9d2b847e7defd68ab1ee4bfd04e5c8f71bae547416619dcad51bc4cfd03"
+}

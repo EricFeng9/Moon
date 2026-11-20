@@ -1,0 +1,10 @@
+{
+  "model": "Meta DINOv3 ViT-S/16 LVD-1689M",
+  "code": "https://github.com/facebookresearch/dinov3",
+  "revision": "6876159a11b4df116f30f667f8c9888617df0751",
+  "release_weight": "https://dl.fbaipublicfiles.com/dinov3/dinov3_vits16/dinov3_vits16_pretrain_lvd1689m-08c60483.pth",
+  "download": "https://huggingface.co/nyu-visionx/RAEv2-models/resolve/main/encoders/dinov3/dinov3_vits16_pretrain_lvd1689m-08c60483.pth",
+  "sha256": "08c60483bc63c04f533611e34bf70b120eedb7240f469bc16e9e20bf344b941d",
+  "training_policy": "Frozen DINOv3, randomly initialized trainable branches",
+  "evaluation_policy": "Independent research"
+}

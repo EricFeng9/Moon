@@ -1,0 +1,66 @@
+{
+  "epoch": 171,
+  "validation": {
+    "mIoU": 0.9043317780838,
+    "IoU": [
+      0.9887367811167217,
+      0.8195668017111309,
+      0.8516911529083117,
+      0.8669711289783265,
+      0.9946930257045098
+    ],
+    "support": [
+      1175938184,
+      36472359,
+      22634161,
+      44319067,
+      397309253
+    ],
+    "confusion_matrix": [
+      [
+        1166682866,
+        3387533,
+        1823807,
+        3246539,
+        797439
+      ],
+      [
+        1994364,
+        33941551,
+        1609,
+        373250,
+        161585
+      ],
+      [
+        1786688,
+        15446,
+        20832013,
+        14,
+        0
+      ],
+      [
+        245983,
+        1508236,
+        9,
+        42306784,
+        258055
+      ],
+      [
+        7943,
+        30440,
+        0,
+        859507,
+        396411363
+      ]
+    ],
+    "samples": 1599,
+    "seconds": 235.53902764013037,
+    "weights": "model"
+  },
+  "selected_weights": "model",
+  "checkpoint_sha256": "17fac55c0d58e43c632d75b71ed3a822abdd7022df71da9887adb9a8a5e2951e",
+  "checkpoint_path": "/home/fengjunming/data/Moon_1115_artifacts/runs/official_dinov3_subpixel/261119_moon_dinov3_subpixel/selection/best.pt",
+  "run_path": "/home/fengjunming/data/Moon_1115_artifacts/runs/official_dinov3_subpixel/261119_moon_dinov3_subpixel",
+  "captured_at": "2026-11-20T12:37:17.951381+00:00",
+  "final_test_available": false
+}

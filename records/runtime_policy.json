@@ -1,0 +1,6 @@
+{
+  "max_seconds": null,
+  "epochs": 200,
+  "patience": 0,
+  "early_stopping_enabled": false
+}
