@@ -1,0 +1,57 @@
+{
+  "sample": "1693274724086398208.png",
+  "pyramid": [
+    [
+      1,
+      64,
+      256,
+      256
+    ],
+    [
+      1,
+      128,
+      128,
+      128
+    ],
+    [
+      1,
+      320,
+      64,
+      64
+    ],
+    [
+      1,
+      512,
+      32,
+      32
+    ]
+  ],
+  "loss": 4.750506401062012,
+  "frozen_parameters": 21601152,
+  "trainable_parameters": 7553581,
+  "gate_initial_fraction": 0.05,
+  "gate_branch_gradient_norms": [
+    {
+      "dino": 0.005304296966642141,
+      "mit": 0.007797012571245432
+    },
+    {
+      "dino": 0.005908289924263954,
+      "mit": 0.004826703108847141
+    }
+  ],
+  "gate_ranges_after_one_update": [
+    [
+      0.04829637333750725,
+      0.05046498402953148
+    ],
+    [
+      0.0488336980342865,
+      0.05175790190696716
+    ]
+  ],
+  "subpixel_input_gradient": 0.00020320304611232132,
+  "output_identical_at_initialization": true,
+  "frozen_weights_unchanged_after_step": true,
+  "sha256": "08c60483bc63c04f533611e34bf70b120eedb7240f469bc16e9e20bf344b941d"
+}
